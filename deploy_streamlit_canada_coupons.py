@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import sklearn
 from sklearn.ensemble import RandomForestClassifier
 import base64
 import pickle
@@ -36,7 +37,7 @@ def main():
                                 'hist_customer_2',
                                 'age']
 
-    mdl_rfc_best = pickle.load(open('pickle_mdl_rfc_best.sav', 'rb'))
+    #mdl_rfc_best = pickle.load(open('pickle_mdl_rfc_best.sav', 'rb'))
     Xtrain_selec = pickle.load(open('pickle_Xtrain_selec.sav', 'rb'))
     ytrain = pickle.load(open('pickle_ytrain.sav', 'rb'))
     #st.dataframe(Xtrain_selec)
