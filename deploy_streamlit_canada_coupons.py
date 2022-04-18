@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-#import sklearn
+import sklearn
 from sklearn.ensemble import RandomForestClassifier
-#import base64
 import pickle
+import base64
 
 #streamlit
 def main():        
